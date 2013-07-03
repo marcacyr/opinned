@@ -1,0 +1,55 @@
+$navbarBackgroundHighlight: #530FA6;
+$navbarBackground: #530FA6;
+$navbarText: white;
+$navbarLinkColor: white;
+$navbarLinkColorHover: #111;
+$btnPrimaryBackground: purple;
+
+
+@import 'bootstrap';
+body{
+    padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+html body a:hover {
+	text-decoration: none;
+}
+
+.navbar-inner{
+    @include box-shadow(none !important);
+		border: 0;
+		background-color: rgba(59, 89, 153, .85);
+		background-image: none;
+		background-repeat: no-repeat;
+		opacity: 1;
+}
+
+.footer{
+    margin-top: 50px;
+    color: $grayLight;
+    a{
+        color: $gray;
+    }
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.8em;
+  color: white;
+  text-transform: none;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.bold {
+	color: purple;
+}

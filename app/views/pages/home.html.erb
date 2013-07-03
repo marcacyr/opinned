@@ -1,2 +1,17 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+		<div class="hero-unit">
+				<h1>Welcome to <%= link_to "Opinned", root_path, class: "bold" %>!</h1>
+				<p>
+					You've stumbled upon <strong class="bold">Opinned</strong>! This app lets you pin pictures and tell others about the image. Share your opinions, your moments, and more! Be <strong class="bold">OPEN</strong> with your <strong class="bold">OPINIONS</strong> on <strong class="bold">Opinned</strong>! Sign up now to try it out!
+				</p>
+				<div class="container">
+				<p>
+					<%= link_to "Sign up", '#', class: "btn btn-primary btn-large"%>
+				</p>
+				<p>
+					<small>
+					<%= link_to "Login to the App", '#' %>
+					</small>
+				</p>
+				</div>
+		</div>
