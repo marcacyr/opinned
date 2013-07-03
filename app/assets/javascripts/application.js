@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require colorbox-rails
 //= require jquery_ujs
 //= require jquery.masonry.min.js
 //= require bootstrap
