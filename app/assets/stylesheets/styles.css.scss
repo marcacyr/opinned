@@ -1,14 +1,17 @@
-$navbarBackgroundHighlight: #530FA6;
-$navbarBackground: #530FA6;
+$navbarBackgroundHighlight: #3b5999;
+$navbarBackground: #3b5999;
 $navbarText: white;
 $navbarLinkColor: white;
-$navbarLinkColorHover: #111;
+$navbarLinkColorHover: white;
 $btnPrimaryBackground: purple;
 
 
 @import 'bootstrap';
-body{
+html body{
     padding-top: 60px;
+}
+html body #bgimage {
+	background-image: image-url('/images/cityscape.jpg');
 }
 
 @import 'bootstrap-responsive';
@@ -24,6 +27,10 @@ html body a:hover {
 		background-image: none;
 		background-repeat: no-repeat;
 		opacity: 1;
+}
+
+.nav:a {
+  text-decoration: none;
 }
 
 .footer{
