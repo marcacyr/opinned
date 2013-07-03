@@ -11,6 +11,8 @@ Myapp::Application.routes.draw do
   root to: "pins#index"
 
   get 'about' => "pages#about"
+  get 'works' => "pages#works"
+  get 'contact' => "pages#contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
