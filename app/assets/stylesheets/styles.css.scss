@@ -10,9 +10,26 @@ $btnPrimaryBackground: purple;
 html body{
     padding-top: 60px;
 }
-html body #bgimage {
-    background-image: url('/assets/images/cityscape.jpg');
+
+#bgimage {
+    background: url('cityscape.jpg') no-repeat right top;
+    opacity: .6;
+    background-attachment: fixed;
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
+.hero-unit {
+  background-color: rgba(204, 204, 204, .85);
+}
+
+
 
 @import 'bootstrap-responsive';
 
@@ -34,11 +51,32 @@ html body a:hover {
 }
 
 .footer{
-    margin-top: 50px;
-    color: $grayLight;
+    opacity: .95;
+    color: $grayDark;
     a{
-        color: $gray;
+        color: $purple;
     }
+}
+
+.footerwrap {
+  border: solid black .5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: auto;
+  padding: 8px;
+  background: #ccc;
+  opacity: .80;
+  -webkit-box-shadow: 1px 3px 8px $grayDark;
+  -moz-box-shadow: 1px 3px 8px $grayDark;
+  box-shadow: 1px 3px 8px $grayDark;
+}
+
+.signuppage {
+    
+}
+
+.pinshow {
+  opacity: .95;
 }
 
 #logo {
@@ -74,6 +112,8 @@ html body a:hover {
     border-radius: 5px;
     box-shadow: 1px 1px 10px #444;
     width: 214px;
+    background: #fff;
+    opacity: .85;
 }
 
 .box img {
@@ -81,8 +121,11 @@ html body a:hover {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    background: #fff;
+    opacity: .95;
 }
 
 .description {
+    background: #fff;
     margin: 10px 0 5px;
 }

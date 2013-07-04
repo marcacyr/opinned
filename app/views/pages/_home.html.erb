@@ -1,5 +1,6 @@
 <% unless user_signed_in? %>
 		<div class="hero-unit">
+			<div container="homepage">
 				<h1>Welcome to <%= link_to "Opinnd", root_path, class: "bold" %>!</h1>
 				<p>
 					You've stumbled upon <strong class="bold">Opinnd</strong>! This app lets you pin pictures and tell others about the image. Pin your opinions, your moments, and more! Be <strong class="bold">open</strong> with your <strong class="bold">opinions</strong> on <strong class="bold">Opinnd</strong>! Get Opinn - Sign up now!
@@ -14,5 +15,6 @@
 					</small>
 				</p>
 				</div>
+			</div>
 		</div>
 <% end %>

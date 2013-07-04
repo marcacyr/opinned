@@ -1,16 +1,24 @@
-<h2>Sign up</h2>
+<div class="container-fluid">
+	<div class="hero-unit span10">
+		<div class="container-fixed">
+			<div class="span4">		
+					<h2>Sign up</h2>
 
-<%= minimal_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
+					<%= minimal_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+					  <%= f.error_notification %>
 
-  <%= f.input :name %>
-  <%= f.input :email %>
-  <%= f.input :password %>
-  <%= f.input :password_confirmation %>
+					  <%= f.input :name %>
+					  <%= f.input :email %>
+					  <%= f.input :password %>
+					  <%= f.input :password_confirmation %>
 
-  <div class="form-actions">
-    <%= f.submit "Sign up", class: "btn btn-primary" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+				    <%= f.submit "Sign up", class: "btn btn-primary" %>
+					<% end %>
+				<%= render "devise/shared/links" %>
+			</div>
+				<div class="span3 offset2">
+					
+				</div>
+		</div>
+	</div>
+</div>
