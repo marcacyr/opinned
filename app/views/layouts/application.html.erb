@@ -10,16 +10,16 @@
 <body>
   <div class="container" id="bgimage">
   </div>
-    <div class="span12 centered">
+    <div class="span12 container-fluid">
     	<%= render 'layouts/header' %>
     	
   		<% flash.each do |name, msg| %>
           <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
       <% end %>
-  		<%= yield %>
       
+  		<%= yield %>
   		  <%= render 'layouts/footer' %>
-     
+      
    </div>
 </body>
 </html>
