@@ -11,16 +11,20 @@ html body{
     padding-top: 60px;
 }
 
+/* The commented class below this is set up in case it ever needs to be used. For "yielded" content on the page 
+(see application.html.erb) the class "container-fluid" added to the wrapper div works to center content. */
+
+/*
 #center {
   float: none !important;
   margin-left: 0 auto !important;
   margin-right: 0 auto !important;
-}
+} */
 
 
 #bgimage {
     background: url('cityscape.jpg') no-repeat right top;
-    opacity: .6;
+    opacity: .95;
     background-attachment: fixed;
     z-index: -999;
     min-height: 100%;
@@ -59,12 +63,21 @@ html body a:hover {
 
 .footer{
     opacity: .95;
-    color: $grayDark;
+    color: #fff;
+    position: relative;
+    margin-top: 75px;
+    height: 45px;
+    clear: both;
+    padding-top: 55px;
     a{
-        color: $purple;
+        color: #fff;
+    }
+    a:hover {
+      color: $purple;
     }
 }
 
+/*
 .footerwrap {
   border: solid black .5px;
   border-radius: 2px;
@@ -76,6 +89,7 @@ html body a:hover {
   -moz-box-shadow: 1px 3px 8px $grayDark;
   box-shadow: 1px 3px 8px $grayDark;
 }
+*/
 
 .pinshow {
   opacity: .95;
@@ -116,6 +130,9 @@ html body a:hover {
     width: 214px;
     background: #fff;
     opacity: .85;
+    &:hover {
+      opacity: .95;
+    }
 }
 
 .box img {
@@ -130,4 +147,8 @@ html body a:hover {
 .description {
     background: #fff;
     margin: 10px 0 5px;
+}
+
+.username {
+  color: $grayLighter;
 }
